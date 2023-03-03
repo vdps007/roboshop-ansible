@@ -1,0 +1,3 @@
+- name: Print user
+  debug:
+      msg: user
