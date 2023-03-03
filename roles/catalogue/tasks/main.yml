@@ -1,5 +1,4 @@
 - name: Print catalogue
   debug:
-    msg: catalogue
+    msg: "catalogue"
 
-    
