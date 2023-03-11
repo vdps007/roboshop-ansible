@@ -1,5 +1,5 @@
 - name: update prometheus conf
-  ansible.builtin.templates:
+  ansible.builtin.template:
     scr: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
   
