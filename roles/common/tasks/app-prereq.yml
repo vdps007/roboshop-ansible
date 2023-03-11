@@ -1,6 +1,6 @@
 - name: Create Application User
   ansible.builtin.user:
-    name: {{ lookup('amazon.aws.aws_ssm', '{{env}}.payment.amqp_user', region='us-east-1') }}
+    name: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.payment.amqp_user', region='us-east-1') }}"
 
 - name: Delete old app directory
   ansible.builtin.file:
