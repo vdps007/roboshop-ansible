@@ -1,6 +1,6 @@
-- name: update prometheus conf
+- name: Update Prometheus Conf
   ansible.builtin.template:
-    scr: prometheus.yml
+    src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
   
 - name: Restart prometheus
