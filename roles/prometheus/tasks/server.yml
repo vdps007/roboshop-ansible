@@ -1,3 +1,11 @@
-- name: tast
-  debug:
-    msg: test
+- name: update prometheus conf
+  ansible.builtin.templates:
+    scr: prometheus.yml
+    dest: /opt/prometheus/prometheus.yml
+  
+- name: Restart prometheus
+  ansible.builtin.systemd:
+    name: prometheus
+    state: restarted
+
+    
