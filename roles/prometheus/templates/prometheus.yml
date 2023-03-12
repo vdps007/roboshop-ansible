@@ -16,6 +16,10 @@ alerting:
 
 
 rule_files:
+{% for file in alert_files %}
+  - {{ file }}
+{% endfor %}
+
 
 scrape_configs:
 
